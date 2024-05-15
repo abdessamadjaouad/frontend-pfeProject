@@ -1,0 +1,58 @@
+        <p-dialog [(visible)]="createDialog" [style]="{width: '70vw'}" header="{{'retard.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+            <ng-template pTemplate="content" >
+                        <p-tabView>
+                            <p-tabPanel header="{{'retard.tabPan' | translate}}">
+                                <div class="grid">
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="1">{{'retard.ref' | translate}}<span style="color: red;">*</span></label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'retard.ref' | translate}}" id="1" [(ngModel)]="item.ref"
+                                                            [ngClass]="{'ng-invalid ng-dirty' : !validRetardRef}"  />
+                                                    <small class='p-error' *ngIf='!validRetardRef'>Ref est obligatoire.</small>
+                                                </div>
+
+
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="2">{{'retard.dateRetart' | translate}}</label>
+                                                    <p-calendar appendTo="body" id="2"  [showTime]="true" [showSeconds]="false" placeholder="{{'retard.dateRetart' | translate}}"  [(ngModel)]="item.dateRetart"
+                                                            dateFormat="{{dateFormat}}"  >
+                                                    </p-calendar>
+                                                    
+                                                </div>
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="3">{{'retard.duree' | translate}}</label>
+                                                    <p-inputNumber class="mb-2 mr-2" id="3" placeholder="{{'retard.duree' | translate}}" [(ngModel)]="item.duree"  >
+                                                    </p-inputNumber>
+                                                    
+                                                </div>
+
+                                            <div class="field col-11 md:col-6">
+                                                <label for="4">{{'retard.agent' | translate}}</label>
+                                                <p-dropdown  appendTo="body"  [options]="agents" [(ngModel)]="item.agent" id="4" [filter]="true" filterMatchMode="contains"
+                                                        [showClear]="true" optionLabel="ref" placeholder="{{'retard.agent' | translate}}"  >
+                                                </p-dropdown>
+                                                
+                                            </div>
+
+                                </div>
+                            </p-tabPanel>
+
+                        </p-tabView>
+
+            </ng-template>
+
+            <ng-template pTemplate="footer" >
+                <div class="p-flexbox">
+
+                            <button pButton pRipple  label="{{'validate' | translate}}"  icon="pi pi-check"  (click)="save()"></button>
+
+
+                            <button pButton pRipple  label="{{'cancel' | translate}}" icon="pi pi-times" class="p-button-outlined" (click)="hideCreateDialog()"></button>
+
+
+                </div>
+            </ng-template>
+
+    </p-dialog>

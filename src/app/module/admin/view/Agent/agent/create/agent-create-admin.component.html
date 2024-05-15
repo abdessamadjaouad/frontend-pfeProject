@@ -1,0 +1,104 @@
+        <p-dialog [(visible)]="createDialog" [style]="{width: '70vw'}" header="{{'agent.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+            <ng-template pTemplate="content" >
+                        <p-tabView>
+                            <p-tabPanel header="{{'agent.tabPan' | translate}}">
+                                <div class="grid">
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="1">{{'agent.ref' | translate}}<span style="color: red;">*</span></label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'agent.ref' | translate}}" id="1" [(ngModel)]="item.ref"
+                                                            [ngClass]="{'ng-invalid ng-dirty' : !validAgentRef}"  />
+                                                    <small class='p-error' *ngIf='!validAgentRef'>Ref est obligatoire.</small>
+                                                </div>
+
+
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="2">{{'agent.nomUtilisateur' | translate}}</label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'agent.nomUtilisateur' | translate}}" id="2" [(ngModel)]="item.nomUtilisateur"
+                                                             />
+                                                    
+                                                </div>
+
+
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="3">{{'agent.motDePasse' | translate}}</label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'agent.motDePasse' | translate}}" id="3" [(ngModel)]="item.motDePasse"
+                                                             />
+                                                    
+                                                </div>
+
+
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="4">{{'agent.nom' | translate}}</label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'agent.nom' | translate}}" id="4" [(ngModel)]="item.nom"
+                                                             />
+                                                    
+                                                </div>
+
+
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="5">{{'agent.prenom' | translate}}</label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'agent.prenom' | translate}}" id="5" [(ngModel)]="item.prenom"
+                                                             />
+                                                    
+                                                </div>
+
+
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="6">{{'agent.adresse' | translate}}</label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'agent.adresse' | translate}}" id="6" [(ngModel)]="item.adresse"
+                                                             />
+                                                    
+                                                </div>
+
+
+
+                                            <div class="field col-11 md:col-6">
+                                                <label for="7">{{'agent.entiteAdministrative' | translate}}</label>
+                                                <p-dropdown  appendTo="body"  [options]="entiteAdministratives" [(ngModel)]="item.entiteAdministrative" id="7" [filter]="true" filterMatchMode="contains"
+                                                        [showClear]="true" optionLabel="libelle" placeholder="{{'agent.entiteAdministrative' | translate}}"  >
+                                                </p-dropdown>
+                                                
+                                            </div>
+
+                                            <div class="field col-11 md:col-6">
+                                                <label for="8">{{'agent.poste' | translate}}</label>
+                                                <p-dropdown  appendTo="body"  [options]="postes" [(ngModel)]="item.poste" id="8" [filter]="true" filterMatchMode="contains"
+                                                        [showClear]="true" optionLabel="libelle" placeholder="{{'agent.poste' | translate}}"  >
+                                                </p-dropdown>
+                                                
+                                            </div>
+
+                                            <div class="field col-11 md:col-6">
+                                                <label for="9">{{'agent.plageHoraire' | translate}}</label>
+                                                <p-dropdown  appendTo="body"  [options]="plageHoraires" [(ngModel)]="item.plageHoraire" id="9" [filter]="true" filterMatchMode="contains"
+                                                        [showClear]="true" optionLabel="ref" placeholder="{{'agent.plageHoraire' | translate}}"  >
+                                                </p-dropdown>
+                                                
+                                            </div>
+
+                                </div>
+                            </p-tabPanel>
+
+                        </p-tabView>
+
+            </ng-template>
+
+            <ng-template pTemplate="footer" >
+                <div class="p-flexbox">
+
+                            <button pButton pRipple  label="{{'validate' | translate}}"  icon="pi pi-check"  (click)="save()"></button>
+
+
+                            <button pButton pRipple  label="{{'cancel' | translate}}" icon="pi pi-times" class="p-button-outlined" (click)="hideCreateDialog()"></button>
+
+
+                </div>
+            </ng-template>
+
+    </p-dialog>

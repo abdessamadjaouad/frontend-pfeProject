@@ -1,0 +1,117 @@
+import {Component, OnInit} from '@angular/core';
+
+
+import {DatePipe} from '@angular/common';
+import {Router} from '@angular/router';
+import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
+
+
+import {environment} from 'src/environments/environment';
+
+import {RoleService} from 'src/app/zynerator/security/shared/service/Role.service';
+import {AbstractService} from 'src/app/zynerator/service/AbstractService';
+import {BaseDto} from 'src/app/zynerator/dto/BaseDto.model';
+import {BaseCriteria} from 'src/app/zynerator/criteria/BaseCriteria.model';
+import {StringUtilService} from 'src/app/zynerator/util/StringUtil.service';
+import {ServiceLocator} from 'src/app/zynerator/service/ServiceLocator';
+import {ConfirmationService, MessageService,MenuItem} from 'primeng/api';
+import {FileTempDto} from 'src/app/zynerator/dto/FileTempDto.model';
+
+
+import {DemandeAbsenceUtilisateurService} from 'src/app/shared/service/utilisateur/DemandeAbsence/DemandeAbsenceUtilisateur.service';
+import {DemandeAbsenceDto} from 'src/app/shared/model/DemandeAbsence/DemandeAbsence.model';
+import {DemandeAbsenceCriteria} from 'src/app/shared/criteria/DemandeAbsence/DemandeAbsenceCriteria.model';
+
+import {RaisonDemandeAbsenceDto} from 'src/app/shared/model/Poste/RaisonDemandeAbsence.model';
+import {RaisonDemandeAbsenceUtilisateurService} from 'src/app/shared/service/utilisateur/Poste/RaisonDemandeAbsenceUtilisateur.service';
+@Component({
+  selector: 'app-demande-absence-view-utilisateur',
+  templateUrl: './demande-absence-view-utilisateur.component.html'
+})
+export class DemandeAbsenceViewUtilisateurComponent implements OnInit {
+
+
+	protected _submitted = false;
+    protected _errorMessages = new Array<string>();
+
+    protected datePipe: DatePipe;
+    protected messageService: MessageService;
+    protected confirmationService: ConfirmationService;
+    protected roleService: RoleService;
+    protected router: Router;
+    protected stringUtilService: StringUtilService;
+
+
+
+    constructor(private service: DemandeAbsenceUtilisateurService, private raisonDemandeAbsenceService: RaisonDemandeAbsenceUtilisateurService){
+		this.datePipe = ServiceLocator.injector.get(DatePipe);
+        this.messageService = ServiceLocator.injector.get(MessageService);
+        this.confirmationService = ServiceLocator.injector.get(ConfirmationService);
+        this.roleService = ServiceLocator.injector.get(RoleService);
+        this.router = ServiceLocator.injector.get(Router);
+        this.stringUtilService = ServiceLocator.injector.get(StringUtilService);
+	}
+
+    ngOnInit(): void {
+    }
+
+
+    get raisonDemandeAbsence(): RaisonDemandeAbsenceDto {
+        return this.raisonDemandeAbsenceService.item;
+    }
+    set raisonDemandeAbsence(value: RaisonDemandeAbsenceDto) {
+        this.raisonDemandeAbsenceService.item = value;
+    }
+    get raisonDemandeAbsences(): Array<RaisonDemandeAbsenceDto> {
+        return this.raisonDemandeAbsenceService.items;
+    }
+    set raisonDemandeAbsences(value: Array<RaisonDemandeAbsenceDto>) {
+        this.raisonDemandeAbsenceService.items = value;
+    }
+
+    public hideViewDialog() {
+        this.viewDialog = false;
+    }
+
+    get items(): Array<DemandeAbsenceDto> {
+        return this.service.items;
+    }
+
+    set items(value: Array<DemandeAbsenceDto>) {
+        this.service.items = value;
+    }
+
+    get item(): DemandeAbsenceDto {
+        return this.service.item;
+    }
+
+    set item(value: DemandeAbsenceDto) {
+        this.service.item = value;
+    }
+
+    get viewDialog(): boolean {
+        return this.service.viewDialog;
+    }
+
+    set viewDialog(value: boolean) {
+        this.service.viewDialog = value;
+    }
+
+    get criteria(): DemandeAbsenceCriteria {
+        return this.service.criteria;
+    }
+
+    set criteria(value: DemandeAbsenceCriteria) {
+        this.service.criteria = value;
+    }
+
+    get dateFormat(){
+        return environment.dateFormatView;
+    }
+
+    get dateFormatColumn(){
+        return environment.dateFormatList;
+    }
+
+
+}

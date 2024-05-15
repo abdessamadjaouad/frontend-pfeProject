@@ -1,0 +1,346 @@
+{
+"from-to": "Elementos de {first} a {last} (total {totalRecords})",
+    "new": "Nuevo",
+    "search": "Buscar",
+    "export": "Exportar",
+    "import": "Importar",
+    "validate": "Validar",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "next": "Siguiente",
+    "yes": "Sí",
+    "no": "No",
+    "actions": "Acciones",
+    "confirm": "Confirmar",
+    "creation": "Creación",
+    "list": "Lista",
+    "nom": "Nombre",
+    "Données personnelles" : "Datos personales",
+    "Username" : "Nombre de usuario",
+    "Télephone" : "Teléfono",
+    "Nouveau Mot de passe" : "Nueva contraseña",
+    "Confirmer votre Mot de passe" : "Confirmar contraseña",
+    "Mot de passe" : "Contraseña",
+    "prenom":"Nombre de Pila",
+    "Changer": "Cambiar",
+	
+	"actionPermission": {
+    "reference": "Referencia",
+    "libelle": "Etiqueta",
+    "actionPermission": "Permiso de acción",
+    "tabPan": "Permiso de acción",
+    "header": "Lista de permisos de acción",
+    "deleteActionPermissionConfirmationMessage": "¿Estás seguro de que quieres eliminar el permiso de acción",
+    "deleteActionPermissionsConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"modelPermissionUser": {
+    "actionPermission": "Permiso de acción",
+    "actionPermissionPlaceHolder": "Seleccionar un permiso de acción",
+    "actionPermissionPlaceHolderFilter": "Buscar por permiso de acción",
+    "modelPermission": "Permiso de modelo",
+    "modelPermissionPlaceHolder": "Seleccionar un permiso de modelo",
+    "modelPermissionPlaceHolderFilter": "Buscar por permiso de modelo",
+    "value": "Valor",
+    "user": "Usuario",
+    "userPlaceHolder": "Seleccionar un usuario",
+    "userPlaceHolderFilter": "Buscar por usuario",
+    "subAttribute": "Subatributo",
+    "modelPermissionUser": "Permiso de modelo de usuario",
+    "tabPan": "Permiso de modelo de usuario",
+    "header": "Lista de permisos de modelo de usuario",
+    "deleteModelPermissionUserConfirmationMessage": "¿Estás seguro de que quieres eliminar el permiso de modelo de usuario",
+    "deleteModelPermissionUsersConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"role": {
+    "authority": "Autoridad",
+    "role": "Rol",
+    "tabPan": "Rol",
+    "header": "Lista de roles",
+    "deleteRoleConfirmationMessage": "¿Estás seguro de que quieres eliminar el rol",
+    "deleteRolesConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"roleUser": {
+    "role": "Rol",
+    "rolePlaceHolder": "Seleccionar un rol",
+    "rolePlaceHolderFilter": "Buscar por rol",
+    "user": "Usuario",
+    "userPlaceHolder": "Seleccionar un usuario",
+    "userPlaceHolderFilter": "Buscar por usuario",
+    "roleUser": "Usuario de rol",
+    "tabPan": "Usuario de rol",
+    "header": "Lista de usuarios de rol",
+    "deleteRoleUserConfirmationMessage": "¿Estás seguro de que quieres eliminar el usuario de rol",
+    "deleteRoleUsersConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"user": {
+    "credentialsNonExpired": "Credenciales no expiradas",
+    "enabled": "Habilitado",
+    "email": "Correo electrónico",
+    "accountNonExpired": "Cuenta no expirada",
+    "accountNonLocked": "Cuenta no bloqueada",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "passwordChanged": "Contraseña cambiada",
+    "modelPermissionUsers": "Usuarios de permiso de modelo",
+    "roleUsers": "Usuarios de rol",
+    "RoleUsersPlaceHolder": "Seleccionar múltiples roles",
+    "user": "Usuario",
+    "tabPan": "Usuario",
+    "header": "Lista de usuarios",
+    "deleteUserConfirmationMessage": "¿Estás seguro de que quieres eliminar el usuario",
+    "deleteUsersConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"modelPermission": {
+    "reference": "Referencia",
+    "libelle": "Etiqueta",
+    "modelPermission": "Permiso de modelo",
+    "tabPan": "Permiso de modelo",
+    "header": "Lista de permisos de modelo",
+    "deleteModelPermissionConfirmationMessage": "¿Estás seguro de que quieres eliminar el permiso de modelo",
+    "deleteModelPermissionsConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+
+
+
+    "agent":{
+        "ref": "Ref",
+        "nomUtilisateur": "Nom utilisateur",
+        "motDePasse": "Mot de passe",
+        "nom": "Nom",
+        "prenom": "Prenom",
+        "adresse": "Adresse",
+        "entiteAdministrative": "Entite administrative",
+        "entiteAdministrativePlaceHolder": "Select a Entite administrative",
+        "entiteAdministrativePlaceHolderFilter": "Search by Entite administrative",
+        "poste": "Poste",
+        "postePlaceHolder": "Select a Poste",
+        "postePlaceHolderFilter": "Search by Poste",
+        "plageHoraire": "Plage horaire",
+        "plageHorairePlaceHolder": "Select a Plage horaire",
+        "plageHorairePlaceHolderFilter": "Search by Plage horaire",
+        "agent": "Agent",
+        "tabPan": "Agent",
+        "header": "Liste des agents",
+        "deleteAgentConfirmationMessage": "Are you sure you want to delete agent",
+        "deleteAgentsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "pointage":{
+        "ref": "Ref",
+        "agent": "Agent",
+        "agentPlaceHolder": "Select a Agent",
+        "agentPlaceHolderFilter": "Search by Agent",
+        "heureEntree": "Heure entree",
+        "heureEntreeMin": "Heure entree Min",
+        "heureEntreeMax": "Heure entree Max",
+        "heureSortie": "Heure sortie",
+        "heureSortieMin": "Heure sortie Min",
+        "heureSortieMax": "Heure sortie Max",
+        "presence": "Presence",
+        "pointageSens": "Pointage sens",
+        "pointageSensMin": "Pointage sens Min",
+        "pointageSensMax": "Pointage sens Max",
+        "badgeNfc": "Badge nfc",
+        "badgeNfcPlaceHolder": "Select a Badge nfc",
+        "badgeNfcPlaceHolderFilter": "Search by Badge nfc",
+        "pointage": "Pointage",
+        "tabPan": "Pointage",
+        "header": "Liste des pointages",
+        "deletePointageConfirmationMessage": "Are you sure you want to delete pointage",
+        "deletePointagesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "demandeConge":{
+        "ref": "Ref",
+        "dateDebut": "Date debut",
+        "dateDebutMin": "Date debut Min",
+        "dateDebutMax": "Date debut Max",
+        "dateFin": "Date fin",
+        "dateFinMin": "Date fin Min",
+        "dateFinMax": "Date fin Max",
+        "raisonDemandeConge": "Raison demande conge",
+        "raisonDemandeCongePlaceHolder": "Select a Raison demande conge",
+        "raisonDemandeCongePlaceHolderFilter": "Search by Raison demande conge",
+        "demandeConge": "Demande conge",
+        "tabPan": "Demande conge",
+        "header": "Liste des demande conges",
+        "deleteDemandeCongeConfirmationMessage": "Are you sure you want to delete demande conge",
+        "deleteDemandeCongesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "retard":{
+        "ref": "Ref",
+        "dateRetart": "Date retart",
+        "dateRetartMin": "Date retart Min",
+        "dateRetartMax": "Date retart Max",
+        "duree": "Duree",
+        "dureeMin": "Duree Min",
+        "dureeMax": "Duree Max",
+        "agent": "Agent",
+        "agentPlaceHolder": "Select a Agent",
+        "agentPlaceHolderFilter": "Search by Agent",
+        "retard": "Retard",
+        "tabPan": "Retard",
+        "header": "Liste des retards",
+        "deleteRetardConfirmationMessage": "Are you sure you want to delete retard",
+        "deleteRetardsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "entiteAdministrative":{
+        "ref": "Ref",
+        "libelle": "Libelle",
+        "chefService": "Chef service",
+        "chefServicePlaceHolder": "Select a Chef service",
+        "chefServicePlaceHolderFilter": "Search by Chef service",
+        "entiteAdministrative": "Entite administrative",
+        "tabPan": "Entite administrative",
+        "header": "Liste des entite administratives",
+        "deleteEntiteAdministrativeConfirmationMessage": "Are you sure you want to delete entite administrative",
+        "deleteEntiteAdministrativesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "demandeAbsence":{
+        "ref": "Ref",
+        "contenu": "Contenu",
+        "raisonDemandeAbsence": "Raison demande absence",
+        "raisonDemandeAbsencePlaceHolder": "Select a Raison demande absence",
+        "raisonDemandeAbsencePlaceHolderFilter": "Search by Raison demande absence",
+        "demandeAbsence": "Demande absence",
+        "tabPan": "Demande absence",
+        "header": "Liste des demande absences",
+        "deleteDemandeAbsenceConfirmationMessage": "Are you sure you want to delete demande absence",
+        "deleteDemandeAbsencesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "badgeNfc":{
+        "ref": "Ref",
+        "matricule": "Matricule",
+        "location": "Location",
+        "status": "Status",
+        "badgeNfc": "Badge nfc",
+        "tabPan": "Badge nfc",
+        "header": "Liste des badge nfcs",
+        "deleteBadgeNfcConfirmationMessage": "Are you sure you want to delete badge nfc",
+        "deleteBadgeNfcsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "raisonDemandeConge":{
+        "ref": "Ref",
+        "libelle": "Libelle",
+        "raisonDemandeConge": "Raison demande conge",
+        "tabPan": "Raison demande conge",
+        "header": "Liste des raison demande conges",
+        "deleteRaisonDemandeCongeConfirmationMessage": "Are you sure you want to delete raison demande conge",
+        "deleteRaisonDemandeCongesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "poste":{
+        "ref": "Ref",
+        "libelle": "Libelle",
+        "poste": "Poste",
+        "tabPan": "Poste",
+        "header": "Liste des postes",
+        "deletePosteConfirmationMessage": "Are you sure you want to delete poste",
+        "deletePostesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "conge":{
+        "ref": "Ref",
+        "dateDebut": "Date debut",
+        "dateDebutMin": "Date debut Min",
+        "dateDebutMax": "Date debut Max",
+        "dateFin": "Date fin",
+        "dateFinMin": "Date fin Min",
+        "dateFinMax": "Date fin Max",
+        "typeConge": "Type conge",
+        "conge": "Conge",
+        "tabPan": "Conge",
+        "header": "Liste des conges",
+        "deleteCongeConfirmationMessage": "Are you sure you want to delete conge",
+        "deleteCongesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "heureSupplementaire":{
+        "ref": "Ref",
+        "nbrHeure": "Nbr heure",
+        "nbrHeureMin": "Nbr heure Min",
+        "nbrHeureMax": "Nbr heure Max",
+        "heureSupplementaire": "Heure supplementaire",
+        "tabPan": "Heure supplementaire",
+        "header": "Liste des heure supplementaires",
+        "deleteHeureSupplementaireConfirmationMessage": "Are you sure you want to delete heure supplementaire",
+        "deleteHeureSupplementairesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "raisonDemandeAbsence":{
+        "ref": "Ref",
+        "libelle": "Libelle",
+        "raisonDemandeAbsence": "Raison demande absence",
+        "tabPan": "Raison demande absence",
+        "header": "Liste des raison demande absences",
+        "deleteRaisonDemandeAbsenceConfirmationMessage": "Are you sure you want to delete raison demande absence",
+        "deleteRaisonDemandeAbsencesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "absence":{
+        "ref": "Ref",
+        "dateDebut": "Date debut",
+        "dateDebutMin": "Date debut Min",
+        "dateDebutMax": "Date debut Max",
+        "dateFin": "Date fin",
+        "dateFinMin": "Date fin Min",
+        "dateFinMax": "Date fin Max",
+        "typeAbsence": "Type absence",
+        "absence": "Absence",
+        "tabPan": "Absence",
+        "header": "Liste des absences",
+        "deleteAbsenceConfirmationMessage": "Are you sure you want to delete absence",
+        "deleteAbsencesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "demandeDocumentAdministratif":{
+        "ref": "Ref",
+        "type": "Type",
+        "libelle": "Libelle",
+        "demandeDocumentAdministratif": "Demande document administratif",
+        "tabPan": "Demande document administratif",
+        "header": "Liste des demande document administratifs",
+        "deleteDemandeDocumentAdministratifConfirmationMessage": "Are you sure you want to delete demande document administratif",
+        "deleteDemandeDocumentAdministratifsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "plageHoraire":{
+        "ref": "Ref",
+        "typeHoraire": "Type horaire",
+        "heureDebut": "Heure debut",
+        "heureDebutMin": "Heure debut Min",
+        "heureDebutMax": "Heure debut Max",
+        "heureFin": "Heure fin",
+        "heureFinMin": "Heure fin Min",
+        "heureFinMax": "Heure fin Max",
+        "plageHoraire": "Plage horaire",
+        "tabPan": "Plage horaire",
+        "header": "Liste des plage horaires",
+        "deletePlageHoraireConfirmationMessage": "Are you sure you want to delete plage horaire",
+        "deletePlageHorairesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+"appName": "GED"
+}
+
+
